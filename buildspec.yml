@@ -4,11 +4,11 @@ phases:
   pre_build:
     commands:
       - echo Pull loadimpact/k6 image..
-      - sudo docker pull loadimpact/k6
+      - su docker pull loadimpact/k6
   build:
     commands:
       - echo Run performance test
-      - sudo docker run -i loadimpact/k6 run - <scripts/test.js
+      - su docker run -i loadimpact/k6 run - <scripts/test.js
   post_build:
     commands:
       - echo Performance test complete
