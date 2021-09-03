@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Pull loadimpact/k6 image..
-      - docker pull 
+      - docker pull loadimpact/k6
   build:
     commands:
       - echo Run performance test
