@@ -12,7 +12,4 @@ k6 run scripts/test.js
 
 # Run via Docker
 docker run -i loadimpact/k6 run - <scripts/test.js
-
-# Run via Docker Compose
-docker-compose run k6
 ```
