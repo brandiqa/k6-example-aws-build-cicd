@@ -4,7 +4,7 @@ import { sleep } from 'k6';
 export const options = {
     ext: {
         loadimpact: {
-            name: '/script.js',
+            name: 'mike-croc-test',
         },
     },
     duration: '1m',

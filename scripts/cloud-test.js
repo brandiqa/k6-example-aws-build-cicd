@@ -1,24 +1,17 @@
 import http from 'k6/http';
 import { sleep } from 'k6';
 
-// export let options = {
-//     ext: {
-//         loadimpact: {
-//             name: 'My awesome test',
-//         },
-//     },
-// };
 
 export const options = {
+    ext: {
+        loadimpact: {
+            name: 'cloud-test',
+        },
+    },
     duration: '1m',
     vus: 50,
     thresholds: {
         http_req_duration: ['p(95)<500'],
-    },
-    ext: {
-        loadimpact: {
-            name: 'scripts/cloud-test',
-        },
     },
 };
 
